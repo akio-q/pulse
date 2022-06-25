@@ -1,0 +1,39 @@
+.carousel {
+    padding: 81px 0 60px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -80px;
+        border: none;
+        background: inherit;
+    }
+    .slick-next {
+        right: -80px;
+        left: auto;
+    }
+    .slick-dots {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        li {
+            button{
+                width: 40px;
+                height: 40px;
+                margin-right: 5px;
+                border: none;
+                border-radius: 100%;
+                &:focus {
+                    background: $main-color;
+                    color: #FFFF;
+                }
+            }
+        }
+    }
+}

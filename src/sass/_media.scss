@@ -14,6 +14,9 @@
             width: 800px;
         }
     }
+    .carousel {
+        padding: 81px 40px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -67,6 +70,14 @@
             font-size: 19px;
         }
     }
+    .carousel {
+        &__inner {
+            width: 650px;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -110,6 +121,11 @@
         &__descr {
             font-size: 16px;
             line-height: 22px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 500px;
         }
     }
 }
@@ -196,6 +212,12 @@
         .feed-form {
             width: 250px;
             margin: 40px auto 0 auto; 
+        }
+    }
+    .carousel {
+        padding: 81px 10px;
+        &__inner {
+            width: 300px;
         }
     }
 }
