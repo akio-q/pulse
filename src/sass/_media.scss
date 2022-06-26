@@ -20,6 +20,9 @@
     .catalog {
         padding: 0 30px 100px 30px;
     }
+    .feed {
+        padding: 0 0 40px 60px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -84,6 +87,11 @@
     .catalog {
         padding: 0 60px 100px 60px;
     }
+    .feed {
+        &__descr {
+            padding-right: 50px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -144,6 +152,18 @@
        &-item {
             margin: 0 20px 20px 20px;
        }
+    }
+    .feed {
+        padding: 0 0 40px 30px;
+        &__img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        &__descr {
+            padding-right: 30px;
+            font-size: 14px;
+        }
     }
 }
 
@@ -252,6 +272,24 @@
             &__link {
                 font-size: 16px;
             }
+        }
+    }
+    .feed {
+        padding: 0 0 40px 10px;
+        &__img {
+            width: 70px;
+            height: 70px;
+            margin-right: 20px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+        &___count {
+            font-size: 12px;
+        }
+        &__descr {
+            padding-right: 10px;
+            font-size: 13px;
         }
     }
 }
