@@ -196,6 +196,11 @@
         }
         .button {
             width: 180px;
+            height: 40px;
+            font-size: 13px;
+        }
+        &__phone {
+            font-size: 17px;
         }
     }
     .promo {
@@ -297,6 +302,23 @@
         &__descr {
             padding-right: 10px;
             font-size: 13px;
+        }
+    }
+    .modal {
+        width: 310px;
+        padding: 38px 10px 40px 10px;
+        .feed-form {
+            width: 290px;
+        }
+        &__subtitle {
+            font-size: 17px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+        &__close {
+            top: 8px;
+            right: 4px;
         }
     }
 }
