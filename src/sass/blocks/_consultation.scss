@@ -12,4 +12,14 @@
         line-height: 30px;
         color: #FFFFFF;
     }
+    .button {
+        margin-top: 20px;
+    }
+    .error {
+        border: 2px solid red;
+    }
+    label.error {
+        color: #fff;
+        border: none;
+    }
 }
