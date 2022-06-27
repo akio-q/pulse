@@ -92,6 +92,13 @@
             padding-right: 50px;
         }
     }
+    .footer {
+        &__info {
+            top: 100%;
+            bottom: 0;
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 767px) {
