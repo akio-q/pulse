@@ -91,6 +91,7 @@ $(document).ready(function() {
 
     $('input[name="phone"]').mask("+380 99 999-99-99");
 
+    // Ajax
 
     $('form').submit(function(e) {
         e.preventDefault();
@@ -111,6 +112,22 @@ $(document).ready(function() {
             $('form').trigger('reset');
         });
 
+        return false;
+    });
+
+    // Smooth scroll and pageup
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 900) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
 });
