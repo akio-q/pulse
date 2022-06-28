@@ -96,15 +96,11 @@ $(document).ready(function() {
     $('form').submit(function(e) {
         e.preventDefault();
 
-        if (!$(this).valid()) {
-            return;
-        }
-        
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
             data: $(this).serialize()
-        }).done(function () {
+        }).done(function() {
             $(this).find("input").val("");
             $('#consultation, #order').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
@@ -125,10 +121,14 @@ $(document).ready(function() {
         }
     });
 
-    $("a[href^='#']").click(function(){
+    $("a[href=#up]").click(function(){
         const _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
+
+    new WOW().init();
 });
+
+
 
