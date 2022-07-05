@@ -94,8 +94,6 @@
     }
     .footer {
         &__info {
-            top: 100%;
-            bottom: 0;
             width: 100%;
         }
     }
@@ -319,6 +317,14 @@
         &__close {
             top: 8px;
             right: 4px;
+        }
+    }
+    .footer {
+        &__addr {
+            margin-bottom: 30px;
+        }
+        &__phone {
+            margin-bottom: 20px;
         }
     }
 }
